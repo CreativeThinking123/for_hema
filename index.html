@@ -16,16 +16,12 @@ text-align:center;
 overflow:hidden;
 }
 
-/* galaxy canvas */
-
 canvas{
 position:fixed;
 top:0;
 left:0;
 z-index:-1;
 }
-
-/* lock screen */
 
 #lock{
 height:100vh;
@@ -53,8 +49,6 @@ color:white;
 cursor:pointer;
 }
 
-/* scanner */
-
 #scanner{
 display:none;
 position:absolute;
@@ -77,8 +71,6 @@ animation:scan 2s linear infinite;
 0%{top:0}
 100%{top:100%}
 }
-
-/* main page */
 
 #main{
 display:none;
@@ -146,14 +138,12 @@ Happy Women's Day.
 <img id="bouquet" class="bouquet">
 
 <audio id="music">
-<source src="https://raw.githubusercontent.com/CreativeThinking123/for_sakshi/main/new.mp3" type="audio/mpeg">
+<source src="https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/hema.mp3" type="audio/mpeg">
 </audio>
 
 </div>
 
 <script>
-
-/* galaxy animation */
 
 const canvas=document.getElementById("galaxy");
 const ctx=canvas.getContext("2d");
@@ -202,8 +192,6 @@ requestAnimationFrame(animate);
 
 animate();
 
-/* start from secret question */
-
 window.onload=function(){
 
 document.getElementById("lock").style.display="flex";
@@ -211,8 +199,6 @@ document.getElementById("main").style.display="none";
 document.getElementById("scanner").style.display="none";
 
 }
-
-/* unlock page */
 
 function unlock(){
 
@@ -240,36 +226,39 @@ alert("Wrong answer 🙂");
 
 }
 
-/* quotes */
-
 const quotes=[
 
-"Happy Women's Day hema. Your presence makes the world brighter.",
+"Happy Women's Day Hema. Your presence makes the world brighter.",
 
-"hema, your kindness quietly brings warmth to everyone around you.",
+"Hema, your kindness quietly brings warmth to everyone around you.",
 
-"Happy Women's Day hema. The world feels softer because you are in it.",
+"Happy Women's Day Hema. The world feels softer because you are in it.",
 
-"hema, the universe shines brighter because of your smile.",
+"Hema, the universe shines brighter because of your smile.",
 
-"Happy Women's Day hema. Just being you makes life more beautiful."
+"Happy Women's Day Hema. Just being you makes life more beautiful.",
+
+"Hema, today we celebrate the strength and beauty you bring to this world."
 
 ];
 
-/* images */
-
 const images=[
 
-"https://raw.githubusercontent.com/CreativeThinking123/for_sakshi/main/s1.jpeg",
-"https://raw.githubusercontent.com/CreativeThinking123/for_sakshi/main/s2.jpeg",
-"https://raw.githubusercontent.com/CreativeThinking123/for_sakshi/main/s3.jpeg",
-"https://raw.githubusercontent.com/CreativeThinking123/for_sakshi/main/s4.jpeg"
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h1.jpeg",
+
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h2.jpeg",
+
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h3.jpeg",
+
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h4.jpeg",
+
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h5.jpeg",
+
+"https://raw.githubusercontent.com/CreativeThinking123/for_hema/main/h6.jpeg"
 
 ];
 
 let index=0;
-
-/* change quote + image on click */
 
 document.addEventListener("click",function(){
 
